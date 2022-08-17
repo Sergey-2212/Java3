@@ -3,7 +3,7 @@ package lesson1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box <T extends Fruit> {
+public class Box<T extends Fruit> {
     private List<T> box = new ArrayList<>();
     private float weight = 0;
     private String typeOfBox;
@@ -32,7 +32,7 @@ public class Box <T extends Fruit> {
             System.out.println("Ты принес пустую коробку!");
             return;
         } else if (this.typeOfBox.compareTo(another.typeOfBox) == 0) {
-            for(Fruit fruit : another.box) {
+            for (Fruit fruit : another.box) {
                 this.box.add((T) fruit);
                 this.weight += fruit.getWeight();
             }
