@@ -1,6 +1,6 @@
 package lesson1;
 
-public class Orange {
+public class Orange implements Fruit {
     private float weight;
 
     public Orange() {
